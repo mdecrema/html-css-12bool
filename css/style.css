@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.debug .container [class*="col-"] {
+    float: left;
+    border: 1px solid #000;
+    height: 100px;
+}
+.container {
+    height: 300px;
+    border: 1px solid #000;
+}
+
+.row {
+    height: 300px;
+}
+
+
+[class*="col-"] {
+    height: 100%;
+    border: 1px solid #000;
+    position: relative;
+    background-color: pink;
+    padding: 1%;
+}
+
+[class*="col-"] .nested {
+    border: 1px solid #fff;
+    background-color: lightcoral;
+}
+
+p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
